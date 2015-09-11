@@ -34,8 +34,6 @@ public class MainActivity extends Activity {
 
         File noteDir=context.getDir("mydir", Context.MODE_PRIVATE);
 
-        //--------------------------------------------------------
-
         layout=(TableLayout)findViewById(R.id.activity_main);
 
         Display display = getWindowManager().getDefaultDisplay();
