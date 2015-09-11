@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/display_content">
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lang"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:allowUndo="true"
+        android:singleLine="true"
+        android:hint="Language" />
+
+    <EditText
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/lang"
+        android:editable="true"
+        android:allowUndo="true"
+        android:singleLine="true"
+        android:hint="Title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lang">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/code"
+            android:layout_below="@+id/lang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="false"
+            android:editable="true"
+            android:autoText="false"
+            android:allowUndo="true"
+            android:gravity="top"
+            android:hint="Write code here." />
+    </ScrollView>
+</RelativeLayout>
