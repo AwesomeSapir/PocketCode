@@ -33,7 +33,6 @@ public class MainActivity extends Activity {
         Context context=getApplicationContext();
 
         File noteDir=context.getDir("mydir", Context.MODE_PRIVATE);
-        //change 1
 
         //--------------------------------------------------------
 
